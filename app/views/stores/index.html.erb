@@ -1,0 +1,29 @@
+<h1>Lista de Productos</h1>
+
+<%= link_to 'Nuevo Producto', new_store_path %>
+
+<table class="table">
+  <tr>
+    <thead class="thead-dark">
+      <th>Código</th>
+      <th>Nombre</th>
+      <th>Proveedor</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </thead>
+  </tr>
+  <% @stores.each do |store| %>
+  <tr>
+      <td><%= store.cod %></td>
+      <td><%= store.nombre %></td>
+      <td><%= store.proveedor %></td>
+
+
+      <td><%= link_to "Editar", edit_store_path(store) %></td>
+      <td><%= link_to 'Eliminar', store, method: :delete, data: { confirm: '¿Desea borrar este articulo?' } %></td>
+      <td><%= link_to "Mostrar", store %></td>
+
+  </tr>
+  <% end %>
+</table>

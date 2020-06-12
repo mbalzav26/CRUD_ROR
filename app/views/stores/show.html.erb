@@ -1,0 +1,19 @@
+<div>
+    <p>
+      <strong>Código:</strong>
+      <%= @store.cod %>
+    </p>
+
+    <p>
+      <strong>Nombre:</strong>
+      <%= @store.nombre %>
+    </p>
+
+    <p>
+      <strong>proveedor:</strong>
+      <%= @store.proveedor %>
+    </p>
+
+    <%= link_to 'Edit', edit_store_path(@store) %> |
+    <%= link_to 'Back', stores_path %>
+</div>

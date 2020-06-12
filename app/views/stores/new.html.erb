@@ -1,0 +1,18 @@
+<%= form_for @store do |f| %>
+  <div>
+    <%= f.label :Código %>
+    <%= f.number_field :cod %>
+  </div>
+  <div>
+    <%= f.label :Nombre %>
+    <%= f.text_field :nombre %>
+  </div>
+  <div>
+    <%= f.label :Proveedor %>
+    <%= f.text_field :proveedor %>
+  </div>
+  <div>
+    <%= f.submit %>
+    <%= link_to 'Atras', stores_path %>
+  </div>
+<% end %>
