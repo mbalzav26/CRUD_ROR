@@ -1,5 +1,9 @@
-@import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
+
+a{
+  text-decoration: none !important;
+}
 
 .menu{
   height: 70px;
@@ -13,5 +17,5 @@
 
 .for_edit{
   margin: auto;
-  
+
 }
